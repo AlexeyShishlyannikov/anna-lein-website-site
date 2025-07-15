@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    const elements = document.querySelectorAll('.header, .bio, .social-section');
+    const elements = document.querySelectorAll('.header, .profile-section, .social-section');
     elements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';

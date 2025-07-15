@@ -13,6 +13,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 .container {
@@ -50,8 +51,30 @@ body {
     gap: 50px;
 }
 
+.profile-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.profile-image {
+    width: 280px;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+    order: 2;
+}
+
+.content-left {
+    flex: 1;
+    order: 1;
+    text-align: left;
+}
+
 .bio {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .bio-text {
@@ -77,24 +100,24 @@ body {
 
 .social-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .social-link {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
     text-decoration: none;
     color: #3a240e;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 400;
-    padding: 12px 20px;
+    padding: 8px 12px;
     background-color: rgba(58, 36, 14, 0.1);
     border-radius: 8px;
     transition: all 0.3s ease;
-    width: 200px;
     justify-content: center;
 }
 
@@ -107,6 +130,10 @@ body {
     width: 24px;
     height: 24px;
     fill: currentColor;
+}
+
+.social-icon[src] {
+    object-fit: contain;
 }
 
 .instagram:hover {
@@ -157,6 +184,30 @@ body {
         font-size: 1.5rem;
     }
     
+    .profile-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .profile-image {
+        width: 220px;
+        order: 2;
+    }
+    
+    .content-left {
+        order: 1;
+        text-align: center;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-link {
+        width: 180px;
+    }
+    
     .bio-text {
         font-size: 1.1rem;
     }
@@ -165,11 +216,6 @@ body {
         font-size: 1.3rem;
     }
     
-    .social-link {
-        width: 180px;
-        padding: 10px 15px;
-        font-size: 1rem;
-    }
     
     .social-icon {
         width: 20px;
@@ -190,6 +236,10 @@ body {
         font-size: 1.3rem;
     }
     
+    .profile-image {
+        width: 180px;
+    }
+    
     .bio-text {
         font-size: 1rem;
         line-height: 1.6;
@@ -201,7 +251,5 @@ body {
     
     .social-link {
         width: 160px;
-        padding: 8px 12px;
-        font-size: 0.9rem;
     }
 }
