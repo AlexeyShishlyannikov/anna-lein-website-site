@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arsenal', serif;
+    background-color: #ebc3a1;
+    color: #3a240e;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.greeting {
+    font-family: 'Arimo', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #3a240e;
+}
+
+.name {
+    font-family: 'Arsenal', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #3a240e;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.bio {
+    margin-bottom: 20px;
+}
+
+.bio-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-weight: 400;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.social-section {
+    margin-top: 30px;
+}
+
+.social-title {
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #3a240e;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #3a240e;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 12px 20px;
+    background-color: rgba(58, 36, 14, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 200px;
+    justify-content: center;
+}
+
+.social-link:hover {
+    background-color: rgba(58, 36, 14, 0.2);
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.instagram:hover {
+    background-color: rgba(225, 48, 108, 0.1);
+    color: #e1306c;
+}
+
+.facebook:hover {
+    background-color: rgba(24, 119, 242, 0.1);
+    color: #1877f2;
+}
+
+.tiktok:hover {
+    background-color: rgba(254, 44, 85, 0.1);
+    color: #fe2c55;
+}
+
+.threads:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.twitter:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.linkedin:hover {
+    background-color: rgba(10, 102, 194, 0.1);
+    color: #0a66c2;
+}
+
+.youtube:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #ff0000;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 15px;
+    }
+    
+    .greeting {
+        font-size: 2rem;
+    }
+    
+    .name {
+        font-size: 1.5rem;
+    }
+    
+    .bio-text {
+        font-size: 1.1rem;
+    }
+    
+    .social-title {
+        font-size: 1.3rem;
+    }
+    
+    .social-link {
+        width: 180px;
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+    
+    .social-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 10px;
+    }
+    
+    .greeting {
+        font-size: 1.8rem;
+    }
+    
+    .name {
+        font-size: 1.3rem;
+    }
+    
+    .bio-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .social-title {
+        font-size: 1.2rem;
+    }
+    
+    .social-link {
+        width: 160px;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
