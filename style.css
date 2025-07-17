@@ -10,17 +10,16 @@ body {
     color: #3a240e;
     line-height: 1.6;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0;
+    padding: 0;
 }
 
 .container {
-    max-width: 600px;
+    max-width: 1200px;
     width: 100%;
     padding: 40px 20px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .header {
@@ -54,23 +53,29 @@ body {
 .profile-section {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 60px;
     justify-content: space-between;
+    min-height: 100vh;
+    position: relative;
 }
 
 .profile-image {
-    width: 280px;
+    width: 320px;
     height: auto;
     object-fit: cover;
     flex-shrink: 0;
     order: 2;
+    position: sticky;
+    top: 40px;
 }
 
 .content-left {
     flex: 1;
     order: 1;
     text-align: left;
+    max-width: 70%;
+    padding-right: 20px;
 }
 
 .bio {
@@ -78,11 +83,40 @@ body {
 }
 
 .bio-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
+    font-size: 1.1rem;
+    line-height: 1.7;
     font-weight: 400;
-    max-width: 500px;
-    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.bio h3 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    color: #3a240e;
+}
+
+.bio h4 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: #3a240e;
+}
+
+.bio ul {
+    margin-bottom: 16px;
+    padding-left: 24px;
+}
+
+.bio li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 8px;
 }
 
 .social-section {
@@ -187,16 +221,30 @@ body {
     .profile-section {
         flex-direction: column;
         gap: 30px;
+        min-height: auto;
     }
     
     .profile-image {
         width: 220px;
         order: 2;
+        position: static;
+        margin: 0 auto;
     }
     
     .content-left {
         order: 1;
+        text-align: left;
+        max-width: 100%;
+        padding-right: 0;
+    }
+    
+    .bio h3 {
+        font-size: 1.8rem;
         text-align: center;
+    }
+    
+    .bio h4 {
+        font-size: 1.3rem;
     }
     
     .social-links {
@@ -209,13 +257,12 @@ body {
     }
     
     .bio-text {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .social-title {
         font-size: 1.3rem;
     }
-    
     
     .social-icon {
         width: 20px;
@@ -240,9 +287,21 @@ body {
         width: 180px;
     }
     
+    .bio h3 {
+        font-size: 1.6rem;
+    }
+    
+    .bio h4 {
+        font-size: 1.1rem;
+    }
+    
     .bio-text {
-        font-size: 1rem;
+        font-size: 0.95rem;
         line-height: 1.6;
+    }
+    
+    .bio li {
+        font-size: 0.95rem;
     }
     
     .social-title {
